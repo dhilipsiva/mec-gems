@@ -371,6 +371,9 @@ module.exports = function (grunt) {
         grunt.task.run(['serve']);
     });
 
+    grunt.registerTask('heroku:production', function () {
+        grunt.task.run(['build']);
+    });
     grunt.registerTask('test', function(target) {
         if (target !== 'watch') {
             grunt.task.run([
