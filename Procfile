@@ -1,1 +1,1 @@
-web: grunt serve && cd dist/ && http-server ./ $PORT
+web: grunt build && cd dist/ && http-server ./ $PORT
